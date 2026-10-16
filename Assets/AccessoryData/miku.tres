@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="AccessoryData" format=3 uid="uid://i2cm40n6btvi"]
+
+[ext_resource type="Script" uid="uid://bkbjeyadvu0bq" path="res://Scripts/AccessoryData.gd" id="1_66jrg"]
+[ext_resource type="Texture2D" uid="uid://5haruuvysfl3" path="res://Assets/Accessory/miku.png" id="1_vedvx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ub0k5"]
+atlas = ExtResource("1_vedvx")
+region = Rect2(0, 531.95483, 800, 268.04517)
+
+[resource]
+script = ExtResource("1_66jrg")
+accessory_name = "Miku"
+slot = "Body"
+texture = ExtResource("1_vedvx")
+icon = SubResource("AtlasTexture_ub0k5")
+price = 5
+metadata/_custom_type_script = "uid://bkbjeyadvu0bq"

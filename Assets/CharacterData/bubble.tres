@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://b35e4m44crotw"]
+
+[ext_resource type="Script" uid="uid://bu6gv51dr1yc6" path="res://Scripts/CharacterData.gd" id="1_mmybm"]
+[ext_resource type="Texture2D" uid="uid://b8322rbsr0b03" path="res://Assets/Character/bubble_chew1.png" id="1_ooa5a"]
+[ext_resource type="Texture2D" uid="uid://rpcpvxaqre0k" path="res://Assets/Character/bubble_chew2.png" id="2_v8q0a"]
+[ext_resource type="Texture2D" uid="uid://1nh5pbg4qdbd" path="res://Assets/Character/bubble_blink.png" id="3_re0p7"]
+[ext_resource type="Texture2D" uid="uid://b1l1r6sohj7cc" path="res://Assets/Character/bubble_normal.png" id="4_r4g0q"]
+[ext_resource type="Texture2D" uid="uid://c1l00olufkmqp" path="res://Assets/Character/bubble_mouth.png" id="5_k752y"]
+
+[resource]
+script = ExtResource("1_mmybm")
+character_name = "Bubble"
+description = "Kecil, bulat, dan tidak punya niat menyakiti siapa pun."
+rarity = "common"
+eyes_open_texture = ExtResource("4_r4g0q")
+eyes_closed_texture = ExtResource("3_re0p7")
+mouth_open_texture = ExtResource("5_k752y")
+chew_texture_1 = ExtResource("1_ooa5a")
+chew_texture_2 = ExtResource("2_v8q0a")
+metadata/_custom_type_script = "uid://bu6gv51dr1yc6"

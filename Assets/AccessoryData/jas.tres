@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="AccessoryData" format=3 uid="uid://d1mv3skakx0gh"]
+
+[ext_resource type="Texture2D" uid="uid://dha7ct8yf1k6x" path="res://Assets/Accessory/jas.png" id="1_qeryf"]
+[ext_resource type="Script" uid="uid://bkbjeyadvu0bq" path="res://Scripts/AccessoryData.gd" id="1_wfiaf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qeryf"]
+atlas = ExtResource("1_qeryf")
+region = Rect2(0, 526.7099, 800, 273.2901)
+
+[resource]
+script = ExtResource("1_wfiaf")
+accessory_name = "Jas"
+slot = "Body"
+texture = ExtResource("1_qeryf")
+icon = SubResource("AtlasTexture_qeryf")
+price = 5
+metadata/_custom_type_script = "uid://bkbjeyadvu0bq"

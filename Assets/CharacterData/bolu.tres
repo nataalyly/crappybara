@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://cpjdb8yycpt45"]
+
+[ext_resource type="Texture2D" uid="uid://dt233h6m2p22h" path="res://Assets/Character/bolu_chew1.png" id="1_ovp6b"]
+[ext_resource type="Texture2D" uid="uid://bslcdnd5uuinh" path="res://Assets/Character/bolu_chew2.png" id="2_wqb4j"]
+[ext_resource type="Texture2D" uid="uid://bpxb5lucqwhi8" path="res://Assets/Character/bolu_blink.png" id="3_d3pnm"]
+[ext_resource type="Texture2D" uid="uid://b8146an4iofi3" path="res://Assets/Character/bolu_normal.png" id="4_kte7w"]
+[ext_resource type="Texture2D" uid="uid://dxfakm6od1w2f" path="res://Assets/Character/bolu_mouth.png" id="5_ln32k"]
+[ext_resource type="Script" uid="uid://bu6gv51dr1yc6" path="res://Scripts/CharacterData.gd" id="6_onstc"]
+
+[resource]
+script = ExtResource("6_onstc")
+character_name = "Bolu"
+description = "Kalau rebahan adalah pekerjaan, dia sudah jadi CEO."
+rarity = "rare"
+eyes_open_texture = ExtResource("4_kte7w")
+eyes_closed_texture = ExtResource("3_d3pnm")
+mouth_open_texture = ExtResource("5_ln32k")
+chew_texture_1 = ExtResource("1_ovp6b")
+chew_texture_2 = ExtResource("2_wqb4j")
+metadata/_custom_type_script = "uid://bu6gv51dr1yc6"

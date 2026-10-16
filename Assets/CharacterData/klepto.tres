@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://te4vsmfurqih"]
+
+[ext_resource type="Script" uid="uid://bu6gv51dr1yc6" path="res://Scripts/CharacterData.gd" id="1_bb7b6"]
+[ext_resource type="Texture2D" uid="uid://wxbjgohxiser" path="res://Assets/Character/klepto_chew1.png" id="1_ca6vy"]
+[ext_resource type="Texture2D" uid="uid://dlscq3bla247k" path="res://Assets/Character/klepto_chew2.png" id="2_7itp7"]
+[ext_resource type="Texture2D" uid="uid://v6yq5ctfiegl" path="res://Assets/Character/klepto_blink.png" id="3_v6ex2"]
+[ext_resource type="Texture2D" uid="uid://bhlb68d4w7th2" path="res://Assets/Character/klepto_normal.png" id="4_w8cdj"]
+[ext_resource type="Texture2D" uid="uid://dr52ahemb25xd" path="res://Assets/Character/klepto_mouth.png" id="5_2yfk1"]
+
+[resource]
+script = ExtResource("1_bb7b6")
+character_name = "Klepto"
+description = "Tidak tahu kenapa dia capybara, tapi dia sangat yakin dirinya kucing."
+rarity = "rare"
+eyes_open_texture = ExtResource("4_w8cdj")
+eyes_closed_texture = ExtResource("3_v6ex2")
+mouth_open_texture = ExtResource("5_2yfk1")
+chew_texture_1 = ExtResource("1_ca6vy")
+chew_texture_2 = ExtResource("2_7itp7")
+metadata/_custom_type_script = "uid://bu6gv51dr1yc6"

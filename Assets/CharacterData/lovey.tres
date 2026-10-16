@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://b3ld1q0v4p35k"]
+
+[ext_resource type="Texture2D" uid="uid://c5xvocil7sbya" path="res://Assets/Character/lovey_chew1.png" id="1_aende"]
+[ext_resource type="Texture2D" uid="uid://dmo7jwyqrhrp2" path="res://Assets/Character/lovey_chew2.png" id="2_5lwse"]
+[ext_resource type="Texture2D" uid="uid://mqhiq8xbhh2w" path="res://Assets/Character/lovey_blink.png" id="3_lm5y7"]
+[ext_resource type="Texture2D" uid="uid://b0kjnyj1mayvh" path="res://Assets/Character/lovey_normal.png" id="4_al17a"]
+[ext_resource type="Texture2D" uid="uid://bs75xan1qvvk" path="res://Assets/Character/lovey_mouth.png" id="5_vr2id"]
+[ext_resource type="Script" uid="uid://bu6gv51dr1yc6" path="res://Scripts/CharacterData.gd" id="6_askc5"]
+
+[resource]
+script = ExtResource("6_askc5")
+character_name = "Lovey"
+description = "Anggun, cantik, dan siap menggigit siapa pun."
+rarity = "rare"
+eyes_open_texture = ExtResource("4_al17a")
+eyes_closed_texture = ExtResource("3_lm5y7")
+mouth_open_texture = ExtResource("5_vr2id")
+chew_texture_1 = ExtResource("1_aende")
+chew_texture_2 = ExtResource("2_5lwse")
+metadata/_custom_type_script = "uid://bu6gv51dr1yc6"

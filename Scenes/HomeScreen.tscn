@@ -1,0 +1,632 @@
+[gd_scene format=3 uid="uid://cvp2ya3cqt3cd"]
+
+[ext_resource type="Texture2D" uid="uid://c03dvvc0nh3r3" path="res://Assets/bg.jpeg" id="1_dytv0"]
+[ext_resource type="Script" uid="uid://dqr5rbfagc8ra" path="res://Scripts/HomeScreen.gd" id="1_lh68d"]
+[ext_resource type="Texture2D" uid="uid://bv6q8qlp3p7ir" path="res://Assets/Character/capy_normal.png" id="2_1b72j"]
+[ext_resource type="Texture2D" uid="uid://m0mwnkowupy4" path="res://Assets/sad.png" id="2_njs74"]
+[ext_resource type="Texture2D" uid="uid://dul0xqv1k547k" path="res://Assets/Buttons/feed.png" id="2_omb7u"]
+[ext_resource type="Texture2D" uid="uid://cei1heyvj4vqu" path="res://Assets/poker.png" id="3_l0ccl"]
+[ext_resource type="Texture2D" uid="uid://cpb87mujil8l6" path="res://Assets/Buttons/gold.png" id="3_lnpt4"]
+[ext_resource type="Texture2D" uid="uid://dcm5eybdgnwe0" path="res://Assets/normal.png" id="4_g1xn7"]
+[ext_resource type="Texture2D" uid="uid://dw6ejd6656q0o" path="res://Assets/happy.png" id="4_ldh4m"]
+[ext_resource type="Texture2D" uid="uid://dea1ihjsxpc4f" path="res://Assets/ticket.png" id="4_toqq7"]
+[ext_resource type="Texture2D" uid="uid://do41tvpbfswf1" path="res://Assets/exp icon.png" id="5_ua0ue"]
+[ext_resource type="Texture2D" uid="uid://7ng82fsdoxqx" path="res://Assets/Food/peach0.png" id="6_gdc8a"]
+[ext_resource type="Texture2D" uid="uid://dek3jm3kg5to2" path="res://Assets/currency_bg.png" id="6_k26gw"]
+[ext_resource type="Texture2D" uid="uid://bnokti7sjmkau" path="res://Assets/Buttons/shop.png" id="6_t0bo2"]
+[ext_resource type="Texture2D" uid="uid://ca7pyuafybgcg" path="res://Assets/Food/peach1.png" id="7_wr5nu"]
+[ext_resource type="Texture2D" uid="uid://2kvytqdvbcv6" path="res://Assets/Buttons/options.png" id="8_j27ix"]
+[ext_resource type="Texture2D" uid="uid://bv5d4e3q80sw1" path="res://Assets/Food/peach2.png" id="8_n1gs8"]
+[ext_resource type="Texture2D" uid="uid://b18c0efd7kwel" path="res://Assets/Buttons/gacha.png" id="9_j27ix"]
+[ext_resource type="Texture2D" uid="uid://dh5nxxvealy4u" path="res://Assets/UI Panel/menu_popup.png" id="9_lh68d"]
+[ext_resource type="Texture2D" uid="uid://xyxfxiq6m0ha" path="res://Assets/Food/corn0.png" id="9_qdx0e"]
+[ext_resource type="Texture2D" uid="uid://bexu40peawd06" path="res://Assets/Food/corn1.png" id="10_sle7y"]
+[ext_resource type="Texture2D" uid="uid://ync5wfrdd72d" path="res://Assets/Food/corn2.png" id="11_1jqrv"]
+[ext_resource type="Texture2D" uid="uid://bf2unr0poeh0t" path="res://Assets/Buttons/settings.png" id="11_r7pi6"]
+[ext_resource type="Texture2D" uid="uid://cq8haqwm06xx7" path="res://Assets/Food/watermelon0.png" id="12_06xv8"]
+[ext_resource type="Texture2D" uid="uid://o1ajwam06deb" path="res://Assets/Buttons/accessories.png" id="12_7r8ml"]
+[ext_resource type="Texture2D" uid="uid://c3arphsw6npnc" path="res://Assets/Food/watermelon1.png" id="13_bjiju"]
+[ext_resource type="Texture2D" uid="uid://1n328hhttb2j" path="res://Assets/Buttons/close.png" id="13_r7pi6"]
+[ext_resource type="Texture2D" uid="uid://dnboi4yepvqjo" path="res://Assets/Food/watermelon2.png" id="14_ascg1"]
+[ext_resource type="Texture2D" uid="uid://csybm1qdhxbuh" path="res://Assets/Buttons/battle button.png" id="16_qdx0e"]
+[ext_resource type="FontFile" uid="uid://cwvaic8du4m71" path="res://Assets/Fonts/Game Bubble.ttf" id="18_1jqrv"]
+[ext_resource type="FontFile" uid="uid://ccvpusp74pttj" path="res://Assets/Fonts/Sunny Spells Basic.ttf" id="20_06xv8"]
+[ext_resource type="Script" uid="uid://dved8jjsnn672" path="res://Scripts/AccessoryLayer.gd" id="20_bjiju"]
+[ext_resource type="Texture2D" uid="uid://tqc6vxwcvjle" path="res://Assets/Buttons/inventory.png" id="26_n1gs8"]
+[ext_resource type="Texture2D" uid="uid://c35t7r127u84d" path="res://Assets/Buttons/char.png" id="27_qdx0e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s56n0"]
+atlas = ExtResource("2_njs74")
+region = Rect2(252.65857, 209.84767, 758.37317, 774.6823)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_njs74"]
+atlas = ExtResource("3_l0ccl")
+region = Rect2(236.34937, 230.23405, 778.7595, 742.0641)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l0ccl"]
+atlas = ExtResource("4_g1xn7")
+region = Rect2(236.34937, 222.07951, 766.52783, 770.605)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g1xn7"]
+atlas = ExtResource("4_ldh4m")
+region = Rect2(232.2721, 213.92494, 778.75964, 762.4505)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vwvp8"]
+atlas = ExtResource("2_omb7u")
+region = Rect2(194.35559, 247.10474, 913.3096, 864.3823)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66mg0"]
+atlas = ExtResource("4_ldh4m")
+region = Rect2(256.73584, 266.9295, 733.9094, 693.13684)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_71v5y"]
+atlas = ExtResource("4_ldh4m")
+region = Rect2(256.73584, 311.77954, 737.9868, 656.44135)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ub0k5"]
+atlas = ExtResource("5_ua0ue")
+region = Rect2(138.49475, 205.7704, 970.3915, 636.05493)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6fxcj"]
+bg_color = Color(0.7441813, 0.7441813, 0.7441813, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b7yla"]
+bg_color = Color(0.64045227, 0.9715056, 0.32858336, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b7yla"]
+atlas = ExtResource("6_k26gw")
+region = Rect2(52.87207, 425.94324, 1166.1006, 566.7413)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ub0k5"]
+texture = SubResource("AtlasTexture_b7yla")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7r8ml"]
+atlas = ExtResource("3_lnpt4")
+region = Rect2(118.1084, 454.4842, 1007.0869, 456.6548)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_voivm"]
+atlas = ExtResource("6_k26gw")
+region = Rect2(52.87207, 421.86597, 1166.1006, 570.81854)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6fxcj"]
+texture = SubResource("AtlasTexture_voivm")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r7pi6"]
+atlas = ExtResource("4_toqq7")
+region = Rect2(191.49939, 173.1522, 970.3915, 827.6868)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fxcj"]
+atlas = ExtResource("9_lh68d")
+region = Rect2(442.18567, 7.9151154, 1015.2416, 1027.4734)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b7yla"]
+texture = SubResource("AtlasTexture_6fxcj")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ua0ue"]
+atlas = ExtResource("9_j27ix")
+region = Rect2(252.65857, 177.22948, 750.2186, 998.9325)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_omb7u"]
+atlas = ExtResource("6_t0bo2")
+region = Rect2(264.89038, 140.53401, 799.146, 925.54156)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ldh4m"]
+atlas = ExtResource("11_r7pi6")
+region = Rect2(142.57202, 63.065765, 1003.00977, 1027.4734)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gdc8a"]
+atlas = ExtResource("26_n1gs8")
+region = Rect2(260.729, 136.18103, 794.5459, 953.4552)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wr5nu"]
+atlas = ExtResource("27_qdx0e")
+region = Rect2(155.3274, 191.08179, 937.56445, 818.3823)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j27ix"]
+atlas = ExtResource("12_7r8ml")
+region = Rect2(150.72668, 209.84767, 925.5414, 786.9141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k26gw"]
+atlas = ExtResource("13_r7pi6")
+region = Rect2(220.04028, 279.16138, 799.146, 737.98676)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8jvhu"]
+atlas = ExtResource("8_j27ix")
+region = Rect2(244.5039, 250.62044, 770.605, 815.45514)
+margin = Rect2(0, 100, 0, 150)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ub0k5"]
+
+[node name="HomeScreen" type="Control" unique_id=1037287409]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lh68d")
+energy_sad_texture = SubResource("AtlasTexture_s56n0")
+energy_poker_texture = SubResource("AtlasTexture_njs74")
+energy_normal_texture = SubResource("AtlasTexture_l0ccl")
+energy_happy_texture = SubResource("AtlasTexture_g1xn7")
+peach_stages = Array[Texture2D]([ExtResource("6_gdc8a"), ExtResource("7_wr5nu"), ExtResource("8_n1gs8")])
+corn_stages = Array[Texture2D]([ExtResource("9_qdx0e"), ExtResource("10_sle7y"), ExtResource("11_1jqrv")])
+watermelon_stages = Array[Texture2D]([ExtResource("12_06xv8"), ExtResource("13_bjiju"), ExtResource("14_ascg1")])
+
+[node name="Background" type="TextureRect" parent="." unique_id=471133507]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_dytv0")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="DoorButton" type="TextureButton" parent="Background" unique_id=1347050192]
+layout_mode = 0
+offset_left = 1587.0
+offset_top = 322.0
+offset_right = 1827.0
+offset_bottom = 909.0
+texture_normal = ExtResource("16_qdx0e")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="CharacterArea" type="Control" parent="." unique_id=2037115541]
+custom_minimum_size = Vector2(1000, 500)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -500.0
+offset_top = -500.0
+offset_right = 500.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="CharacterRow" type="HBoxContainer" parent="CharacterArea" unique_id=1199269026]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -504.0
+offset_top = -594.0
+offset_right = 504.0
+offset_bottom = -94.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="FeedButton" type="TextureButton" parent="CharacterArea/CharacterRow" unique_id=2057939214]
+custom_minimum_size = Vector2(250, 400)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+texture_normal = SubResource("AtlasTexture_vwvp8")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CharacterArea/CharacterRow/FeedButton" unique_id=170704911]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.735
+anchor_right = 0.5
+anchor_bottom = 0.735
+offset_left = -51.5
+offset_top = -18.0
+offset_right = 51.5
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 13
+theme_override_fonts/font = ExtResource("18_1jqrv")
+theme_override_font_sizes/font_size = 45
+text = "Feed"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CharacterDisplay" type="TextureRect" parent="CharacterArea/CharacterRow" unique_id=1854500513]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 2
+size_flags_vertical = 8
+texture = ExtResource("2_1b72j")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AccessoryLayer" type="Control" parent="CharacterArea/CharacterRow/CharacterDisplay" unique_id=1439111173]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("20_bjiju")
+
+[node name="BlinkTimer" type="Timer" parent="CharacterArea/CharacterRow/CharacterDisplay" unique_id=1417701751]
+wait_time = 3.0
+
+[node name="EatTimer" type="Timer" parent="CharacterArea/CharacterRow/CharacterDisplay" unique_id=1260640678]
+one_shot = true
+
+[node name="FoodDisplay" type="TextureRect" parent="CharacterArea/CharacterRow/CharacterDisplay" unique_id=360183526]
+visible = false
+custom_minimum_size = Vector2(250, 250)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="MouthDropZone" type="Control" parent="CharacterArea/CharacterRow/CharacterDisplay" unique_id=1361321823]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchor_left = 0.5
+anchor_top = 0.508
+anchor_right = 0.5
+anchor_bottom = 0.508
+offset_left = -149.0
+offset_top = -113.000015
+offset_right = 141.0
+offset_bottom = 112.999985
+mouse_filter = 2
+
+[node name="EnergyBarWrapper" type="AspectRatioContainer" parent="CharacterArea/CharacterRow" unique_id=61242698]
+custom_minimum_size = Vector2(250, 400)
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="EnergyBar" type="TextureProgressBar" parent="CharacterArea/CharacterRow/EnergyBarWrapper" unique_id=351515013]
+custom_minimum_size = Vector2(250, 250)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+fill_mode = 3
+nine_patch_stretch = true
+texture_under = SubResource("AtlasTexture_66mg0")
+texture_progress = SubResource("AtlasTexture_71v5y")
+tint_under = Color(1, 1, 1, 0.7254902)
+
+[node name="PercentLabel" type="Label" parent="CharacterArea/CharacterRow/EnergyBarWrapper/EnergyBar" unique_id=1163902213]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -31.0
+offset_right = 31.0
+offset_bottom = 34.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("20_06xv8")
+theme_override_font_sizes/font_size = 36
+text = "100%"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="XP_Row" type="HBoxContainer" parent="CharacterArea" unique_id=312811902]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -315.0
+offset_top = -40.0
+offset_right = 165.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="XP_Icon" type="TextureRect" parent="CharacterArea/XP_Row" unique_id=640812981]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 2
+texture = SubResource("AtlasTexture_ub0k5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="XP_Bar" type="ProgressBar" parent="CharacterArea/XP_Row" unique_id=709092991]
+custom_minimum_size = Vector2(600, 40)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/background = SubResource("StyleBoxFlat_6fxcj")
+theme_override_styles/fill = SubResource("StyleBoxFlat_b7yla")
+show_percentage = false
+
+[node name="XP_Value" type="Label" parent="CharacterArea/XP_Row/XP_Bar" unique_id=640903317]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.5
+offset_top = -11.5
+offset_right = 21.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("20_06xv8")
+theme_override_font_sizes/font_size = 36
+text = "0/500"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LevelLabel" type="Label" parent="CharacterArea/XP_Row" unique_id=232473665]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("20_06xv8")
+theme_override_font_sizes/font_size = 42
+text = "Lv. 1"
+
+[node name="CurrencyContainer" type="HBoxContainer" parent="." unique_id=1466318170]
+custom_minimum_size = Vector2(150, 200)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -674.0
+offset_right = -30.0
+offset_bottom = 200.0
+grow_horizontal = 0
+
+[node name="GoldDisplay" type="PanelContainer" parent="CurrencyContainer" unique_id=1423681680]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxTexture_ub0k5")
+
+[node name="GoldRow" type="HBoxContainer" parent="CurrencyContainer/GoldDisplay" unique_id=1776195822]
+custom_minimum_size = Vector2(320, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="GoldIcon" type="TextureRect" parent="CurrencyContainer/GoldDisplay/GoldRow" unique_id=1597285916]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = SubResource("AtlasTexture_7r8ml")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="GoldLabel" type="Label" parent="CurrencyContainer/GoldDisplay/GoldRow" unique_id=706770152]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("20_06xv8")
+theme_override_font_sizes/font_size = 70
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TicketDisplay" type="PanelContainer" parent="CurrencyContainer" unique_id=172136328]
+custom_minimum_size = Vector2(320, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxTexture_6fxcj")
+
+[node name="TicketRow" type="HBoxContainer" parent="CurrencyContainer/TicketDisplay" unique_id=1407551806]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TicketIcon" type="TextureRect" parent="CurrencyContainer/TicketDisplay/TicketRow" unique_id=1751027703]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = SubResource("AtlasTexture_r7pi6")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TicketLabel" type="Label" parent="CurrencyContainer/TicketDisplay/TicketRow" unique_id=493970171]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("20_06xv8")
+theme_override_font_sizes/font_size = 70
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MenuPopup" type="Panel" parent="." unique_id=236453237]
+visible = false
+custom_minimum_size = Vector2(950, 950)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -300.0
+offset_right = 300.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_b7yla")
+
+[node name="MenuButtonList" type="Control" parent="MenuPopup" unique_id=1639584996]
+anchors_preset = 0
+offset_right = 200.0
+offset_bottom = 1220.0
+
+[node name="GachaButton" type="TextureButton" parent="MenuPopup/MenuButtonList" unique_id=2112692632]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 0
+offset_left = 104.0
+offset_top = 112.0
+offset_right = 304.0
+offset_bottom = 312.0
+texture_normal = SubResource("AtlasTexture_ua0ue")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="ShopButton" type="TextureButton" parent="MenuPopup/MenuButtonList" unique_id=1886912344]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 0
+offset_left = 380.0
+offset_top = 112.0
+offset_right = 580.0
+offset_bottom = 312.0
+texture_normal = SubResource("AtlasTexture_omb7u")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="SettingsButton" type="TextureButton" parent="MenuPopup/MenuButtonList" unique_id=144729182]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 0
+offset_left = 655.0
+offset_top = 114.0
+offset_right = 855.0
+offset_bottom = 314.0
+texture_normal = SubResource("AtlasTexture_ldh4m")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="InventoryButton" type="TextureButton" parent="MenuPopup/MenuButtonList" unique_id=1782761786]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 0
+offset_left = 107.0
+offset_top = 385.0
+offset_right = 307.0
+offset_bottom = 585.0
+texture_normal = SubResource("AtlasTexture_gdc8a")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="CharacterButton" type="TextureButton" parent="MenuPopup/MenuButtonList" unique_id=10085422]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 0
+offset_left = 379.0
+offset_top = 383.0
+offset_right = 579.0
+offset_bottom = 583.0
+texture_normal = SubResource("AtlasTexture_wr5nu")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="AccessoriesButton" type="TextureButton" parent="MenuPopup/MenuButtonList" unique_id=498351968]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 0
+offset_left = 655.0
+offset_top = 384.0
+offset_right = 855.0
+offset_bottom = 584.0
+texture_normal = SubResource("AtlasTexture_j27ix")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="CloseButton" type="TextureButton" parent="MenuPopup" unique_id=210116902]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -94.0
+offset_top = -296.0
+offset_right = 106.0
+offset_bottom = -96.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = SubResource("AtlasTexture_k26gw")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="TopLeftButtons" type="HBoxContainer" parent="." unique_id=1723896816]
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 1
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MenuButton" type="TextureButton" parent="TopLeftButtons" unique_id=1440501113]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_8jvhu")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="DailyRewardButton" type="TextureButton" parent="TopLeftButtons" unique_id=485582804]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+ignore_texture_size = true
+
+[node name="PopupLayer" type="Control" parent="." unique_id=501481513]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="HungryWarningToast" type="PanelContainer" parent="." unique_id=734883091]
+visible = false
+custom_minimum_size = Vector2(500, 100)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -0.5
+offset_top = -11.5
+offset_right = 0.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ub0k5")
+
+[node name="HungryWarningLabel" type="Label" parent="HungryWarningToast" unique_id=963556170]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.5924475, 2.201982e-06, 4.3317675e-07, 1)
+theme_override_constants/outline_size = 30
+theme_override_font_sizes/font_size = 60
+text = "Capy is hungry :("
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ComingSoonToast" type="PanelContainer" parent="." unique_id=1370585802]
+visible = false
+custom_minimum_size = Vector2(500, 100)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -0.5
+offset_top = -11.5
+offset_right = 0.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ub0k5")
+
+[node name="ComingSoonLabel" type="Label" parent="ComingSoonToast" unique_id=161956012]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0.7483166, 0.74831647, 3.85046e-07, 1)
+theme_override_constants/outline_size = 30
+theme_override_font_sizes/font_size = 60
+text = "Coming Soon! >.<"
+horizontal_alignment = 1
+vertical_alignment = 1

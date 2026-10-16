@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://cns30q0mgn2f8"]
+
+[ext_resource type="Texture2D" uid="uid://cj2jhv3ccr7dn" path="res://Assets/Character/Yazuka_chew1.png" id="1_55iil"]
+[ext_resource type="Script" uid="uid://bu6gv51dr1yc6" path="res://Scripts/CharacterData.gd" id="1_embn2"]
+[ext_resource type="Texture2D" uid="uid://rpcfc54slqyh" path="res://Assets/Character/Yazuka_chew2.png" id="2_usas1"]
+[ext_resource type="Texture2D" uid="uid://ol5b2sbx0w8t" path="res://Assets/Character/Yazuka_blink.png" id="3_h15xd"]
+[ext_resource type="Texture2D" uid="uid://dr2osv2ajmhdk" path="res://Assets/Character/Yazuka_normal.png" id="4_t0ait"]
+[ext_resource type="Texture2D" uid="uid://ubk38a07k03g" path="res://Assets/Character/Yazuka_mouth.png" id="5_v3jx7"]
+
+[resource]
+script = ExtResource("1_embn2")
+character_name = "Yazuka"
+description = "Rapat jam sembilan, datang jam sebelas, tetap jadi bos."
+rarity = "legendary"
+eyes_open_texture = ExtResource("4_t0ait")
+eyes_closed_texture = ExtResource("3_h15xd")
+mouth_open_texture = ExtResource("5_v3jx7")
+chew_texture_1 = ExtResource("1_55iil")
+chew_texture_2 = ExtResource("2_usas1")
+metadata/_custom_type_script = "uid://bu6gv51dr1yc6"

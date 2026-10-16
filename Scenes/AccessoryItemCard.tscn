@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://2ve5ubwuw3c"]
+
+[ext_resource type="FontFile" uid="uid://ccvpusp74pttj" path="res://Assets/Fonts/Sunny Spells Basic.ttf" id="1_jx8uv"]
+[ext_resource type="Script" uid="uid://dsmrfewg53yj1" path="res://Scripts/AccessoryItemCard.gd" id="1_n3s4m"]
+[ext_resource type="FontFile" uid="uid://cwvaic8du4m71" path="res://Assets/Fonts/Game Bubble.ttf" id="2_n3s4m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n3s4m"]
+bg_color = Color(1, 0.7217046, 0.27120775, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e04q7"]
+content_margin_left = 30.0
+content_margin_right = 30.0
+bg_color = Color(0.87316287, 0.9999997, 0.6239448, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.20878324, 0.27513272, 3.3691526e-06, 1)
+border_blend = true
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[node name="AccessoryItemCard" type="PanelContainer" unique_id=1243805396]
+custom_minimum_size = Vector2(200, 200)
+offset_right = 200.0
+offset_bottom = 224.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_n3s4m")
+script = ExtResource("1_n3s4m")
+
+[node name="CardVBox" type="VBoxContainer" parent="." unique_id=1001286686]
+layout_mode = 2
+
+[node name="IconRect" type="TextureRect" parent="CardVBox" unique_id=8287887]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="NameLabel" type="Label" parent="CardVBox" unique_id=1683972515]
+visible = false
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_jx8uv")
+theme_override_font_sizes/font_size = 32
+text = "Name"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ActionButton" type="Button" parent="CardVBox" unique_id=1065753748]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_n3s4m")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_e04q7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e04q7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_e04q7")
+text = "Button"

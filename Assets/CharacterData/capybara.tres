@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://c6pvouxsovp16"]
+
+[ext_resource type="Texture2D" uid="uid://dekcxdoqbtpwq" path="res://Assets/Character/DarkCapy_chew1.png" id="1_tu68k"]
+[ext_resource type="Texture2D" uid="uid://dggu1n3psqvla" path="res://Assets/Character/DarkCapy_chew2.png" id="2_x2iwk"]
+[ext_resource type="Texture2D" uid="uid://cv6kalxj7vkoa" path="res://Assets/Character/DarkCapy_blink.png" id="3_ccsgw"]
+[ext_resource type="Texture2D" uid="uid://dt7521fas2xkm" path="res://Assets/Character/DarkCapy_normal.png" id="4_h3owr"]
+[ext_resource type="Texture2D" uid="uid://5jjy2t4hoiuy" path="res://Assets/Character/DarkCapy_open_mouth.png" id="5_hs1pp"]
+[ext_resource type="Script" uid="uid://bu6gv51dr1yc6" path="res://Scripts/CharacterData.gd" id="6_w0v4l"]
+
+[resource]
+script = ExtResource("6_w0v4l")
+character_name = "Capybara"
+description = "Jangan ganggu Capy saat sedang berjemur, itu waktu paling sakral."
+rarity = "common"
+eyes_open_texture = ExtResource("4_h3owr")
+eyes_closed_texture = ExtResource("3_ccsgw")
+mouth_open_texture = ExtResource("5_hs1pp")
+chew_texture_1 = ExtResource("1_tu68k")
+chew_texture_2 = ExtResource("2_x2iwk")
+metadata/_custom_type_script = "uid://bu6gv51dr1yc6"

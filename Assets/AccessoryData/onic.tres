@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="AccessoryData" format=3 uid="uid://b7r4iyl1svxh"]
+
+[ext_resource type="Script" uid="uid://bkbjeyadvu0bq" path="res://Scripts/AccessoryData.gd" id="1_4rokv"]
+[ext_resource type="Texture2D" uid="uid://b8cdiqp1r2y0w" path="res://Assets/Accessory/onic.png" id="1_heurw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_heurw"]
+atlas = ExtResource("1_heurw")
+region = Rect2(0, 521.1402, 800, 278.8598)
+
+[resource]
+script = ExtResource("1_4rokv")
+accessory_name = "Onic"
+slot = "Body"
+texture = ExtResource("1_heurw")
+icon = SubResource("AtlasTexture_heurw")
+price = 5
+metadata/_custom_type_script = "uid://bkbjeyadvu0bq"

@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://v0c5f1glurmw"]
+
+[ext_resource type="Script" uid="uid://bhofixrgl42m0" path="res://Scenes/AccessorySidebar.gd" id="1_88ys1"]
+[ext_resource type="Texture2D" uid="uid://874qt5yalgxl" path="res://Assets/UI Panel/sidebar.png" id="2_b53bp"]
+[ext_resource type="Texture2D" uid="uid://n110ksdg0agu" path="res://Assets/Buttons/acc_tab.png" id="2_uvjqo"]
+[ext_resource type="FontFile" uid="uid://cwvaic8du4m71" path="res://Assets/Fonts/Game Bubble.ttf" id="3_uvjqo"]
+[ext_resource type="FontFile" uid="uid://ccvpusp74pttj" path="res://Assets/Fonts/Sunny Spells Basic.ttf" id="4_ohvf8"]
+[ext_resource type="Texture2D" uid="uid://1n328hhttb2j" path="res://Assets/Buttons/close.png" id="5_y5aq6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fxcj"]
+atlas = ExtResource("2_uvjqo")
+region = Rect2(0, 450, 420, 370)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_voivm"]
+atlas = ExtResource("2_uvjqo")
+region = Rect2(406.15356, 396.4098, 472.33502, 424.88934)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qc737"]
+atlas = ExtResource("2_uvjqo")
+region = Rect2(861.3341, 452.59827, 420, 370)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aw7e4"]
+texture = ExtResource("2_b53bp")
+texture_margin_left = 50.0
+texture_margin_top = 38.0
+texture_margin_right = 53.0
+texture_margin_bottom = 53.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b7yla"]
+atlas = ExtResource("5_y5aq6")
+region = Rect2(224.85864, 282.31143, 796.9225, 741.32324)
+
+[node name="AccessorySidebar" type="Control" unique_id=1989662952]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_88ys1")
+
+[node name="SidebarColumn" type="VBoxContainer" parent="." unique_id=2042837864]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -960.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/separation = -10
+
+[node name="TabRow" type="HBoxContainer" parent="SidebarColumn" unique_id=1127386212]
+custom_minimum_size = Vector2(0, 130)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="HeadTab" type="TextureButton" parent="SidebarColumn/TabRow" unique_id=1756961962]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_6fxcj")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="EyewearTab" type="TextureButton" parent="SidebarColumn/TabRow" unique_id=1714135863]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_voivm")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="BodyTab" type="TextureButton" parent="SidebarColumn/TabRow" unique_id=404407271]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_qc737")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="SidebarPanel" type="PanelContainer" parent="SidebarColumn" unique_id=910115850]
+custom_minimum_size = Vector2(960, 950)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_aw7e4")
+
+[node name="Margin" type="MarginContainer" parent="SidebarColumn/SidebarPanel" unique_id=1434968131]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="MainVBox" type="VBoxContainer" parent="SidebarColumn/SidebarPanel/Margin" unique_id=30360472]
+layout_mode = 2
+
+[node name="HeaderRow" type="HBoxContainer" parent="SidebarColumn/SidebarPanel/Margin/MainVBox" unique_id=1883255460]
+layout_mode = 2
+
+[node name="TitleLabel" type="Label" parent="SidebarColumn/SidebarPanel/Margin/MainVBox/HeaderRow" unique_id=1621433107]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("3_uvjqo")
+theme_override_font_sizes/font_size = 60
+text = "Accessories"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TicketLabel" type="Label" parent="SidebarColumn/SidebarPanel/Margin/MainVBox/HeaderRow" unique_id=382546757]
+custom_minimum_size = Vector2(175, 0)
+layout_mode = 2
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("4_ohvf8")
+theme_override_font_sizes/font_size = 40
+text = "Ticket: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CloseButton" type="TextureButton" parent="SidebarColumn/SidebarPanel/Margin/MainVBox/HeaderRow" unique_id=510297375]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_b7yla")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="ScrollContainer" type="ScrollContainer" parent="SidebarColumn/SidebarPanel/Margin/MainVBox" unique_id=1433224569]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="ItemGrid" type="GridContainer" parent="SidebarColumn/SidebarPanel/Margin/MainVBox/ScrollContainer" unique_id=1605645262]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 4
+
+[node name="TicketToast" type="PanelContainer" parent="." unique_id=1537654519]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TicketToastLabel" type="Label" parent="TicketToast" unique_id=207016763]
+layout_mode = 2
+text = "Ticket tidak cukup!"

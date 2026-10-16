@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://0dfqhjnedjlm"]
+
+[ext_resource type="Script" uid="uid://6e1mk61tgtjc" path="res://Scripts/EnemyData.gd" id="1_1nen8"]
+[ext_resource type="Texture2D" uid="uid://7s7tca5v413n" path="res://Assets/Enemy/croc1.png" id="2_xhrls"]
+[ext_resource type="Texture2D" uid="uid://cyrcnmffl6j" path="res://Assets/Enemy/croc2.png" id="3_0r3sb"]
+[ext_resource type="Texture2D" uid="uid://e6trh3w7v1w1" path="res://Assets/Enemy/croc3.png" id="4_75oyp"]
+
+[resource]
+script = ExtResource("1_1nen8")
+enemy_name = "Normal Enemy"
+texture_variants = Array[Texture2D]([ExtResource("2_xhrls"), ExtResource("3_0r3sb"), ExtResource("4_75oyp")])
+max_hp = 150
+xp_reward = 125
+metadata/_custom_type_script = "uid://6e1mk61tgtjc"

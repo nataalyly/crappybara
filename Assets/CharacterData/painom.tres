@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://cbrqwrtqicefa"]
+
+[ext_resource type="Texture2D" uid="uid://cqgb6jy2nmkhf" path="res://Assets/Character/Painom_chew1.png" id="1_f5ku5"]
+[ext_resource type="Script" uid="uid://bu6gv51dr1yc6" path="res://Scripts/CharacterData.gd" id="1_gklwk"]
+[ext_resource type="Texture2D" uid="uid://2dm7xwegf11x" path="res://Assets/Character/Painom_chew2.png" id="2_ucv6c"]
+[ext_resource type="Texture2D" uid="uid://7ss77qq5ul40" path="res://Assets/Character/Painom_blink.png" id="3_ol3yh"]
+[ext_resource type="Texture2D" uid="uid://vvckd23vegug" path="res://Assets/Character/Painom_normal.png" id="4_vs5uu"]
+[ext_resource type="Texture2D" uid="uid://d1flik6xa3qty" path="res://Assets/Character/Painom_mouth.png" id="5_0cj2e"]
+
+[resource]
+script = ExtResource("1_gklwk")
+character_name = "Painom"
+description = "Makanan adalah cinta pertama Painom, sisanya cuma pelengkap."
+rarity = "legendary"
+eyes_open_texture = ExtResource("4_vs5uu")
+eyes_closed_texture = ExtResource("3_ol3yh")
+mouth_open_texture = ExtResource("5_0cj2e")
+chew_texture_1 = ExtResource("1_f5ku5")
+chew_texture_2 = ExtResource("2_ucv6c")
+metadata/_custom_type_script = "uid://bu6gv51dr1yc6"

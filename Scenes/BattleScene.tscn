@@ -1,0 +1,304 @@
+[gd_scene format=3 uid="uid://c6js80rsp8e3g"]
+
+[ext_resource type="Texture2D" uid="uid://cxm56wmd4qxj2" path="res://Assets/battle_bg.png" id="1_12f34"]
+[ext_resource type="Script" uid="uid://btwb4r3bxrx8t" path="res://Scripts/BattleScene.gd" id="1_47u5s"]
+[ext_resource type="Script" uid="uid://6e1mk61tgtjc" path="res://Scripts/EnemyData.gd" id="2_2tp6q"]
+[ext_resource type="Texture2D" uid="uid://bv6q8qlp3p7ir" path="res://Assets/Character/capy_normal.png" id="2_b2eky"]
+[ext_resource type="Texture2D" uid="uid://do41tvpbfswf1" path="res://Assets/exp icon.png" id="3_ahap6"]
+[ext_resource type="Resource" uid="uid://leax4myjky70" path="res://Assets/EnemyData/snake_easy.tres" id="3_kwfy1"]
+[ext_resource type="Resource" uid="uid://0dfqhjnedjlm" path="res://Assets/EnemyData/croc_normal.tres" id="4_ixjr5"]
+[ext_resource type="Resource" uid="uid://cemmyr30arwl3" path="res://Assets/EnemyData/eagle_hard.tres" id="5_1yevk"]
+[ext_resource type="Texture2D" uid="uid://clusjlnm241gc" path="res://Assets/Buttons/exit battle.png" id="7_2tp6q"]
+[ext_resource type="FontFile" uid="uid://ccvpusp74pttj" path="res://Assets/Fonts/Sunny Spells Basic.ttf" id="7_ixjr5"]
+[ext_resource type="FontFile" uid="uid://cwvaic8du4m71" path="res://Assets/Fonts/Game Bubble.ttf" id="9_1yevk"]
+[ext_resource type="Script" uid="uid://dved8jjsnn672" path="res://Scripts/AccessoryLayer.gd" id="11_1yevk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_47u5s"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2tp6q"]
+bg_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lqcc4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hb1yk"]
+atlas = ExtResource("3_ahap6")
+region = Rect2(138.49475, 205.7704, 970.3915, 636.05493)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u810s"]
+bg_color = Color(0.7441813, 0.7441813, 0.7441813, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8uoga"]
+bg_color = Color(0.64045227, 0.9715056, 0.32858336, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="BattleScene" type="Control" unique_id=178018119]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_47u5s")
+enemy_pool = Array[ExtResource("2_2tp6q")]([ExtResource("3_kwfy1"), ExtResource("4_ixjr5"), ExtResource("5_1yevk")])
+
+[node name="Background" type="TextureRect" parent="." unique_id=37054625]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_12f34")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="EnemyArea" type="Control" parent="." unique_id=522631108]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -506.0
+offset_right = 250.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EnemyDisplay" type="TextureButton" parent="EnemyArea" unique_id=254705082]
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = -321.0
+offset_right = 200.0
+offset_bottom = 79.0
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset = Vector2(200, 200)
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="EnemyHPBar" type="ProgressBar" parent="EnemyArea" unique_id=273071427]
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -350.0
+offset_top = 49.0
+offset_right = 350.0
+offset_bottom = 99.0
+grow_horizontal = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_47u5s")
+theme_override_styles/fill = SubResource("StyleBoxFlat_2tp6q")
+show_percentage = false
+
+[node name="DamageLabel" type="Label" parent="EnemyArea" unique_id=354398784]
+visible = false
+custom_minimum_size = Vector2(150, 75)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.528
+anchor_top = 0.48100004
+anchor_right = 0.528
+anchor_bottom = 0.48100004
+offset_left = -363.0
+offset_top = -150.50002
+offset_right = 335.0
+offset_bottom = 319.5
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 14
+theme_override_fonts/font = ExtResource("7_ixjr5")
+theme_override_font_sizes/font_size = 75
+text = "0"
+
+[node name="TopBar" type="HBoxContainer" parent="." unique_id=2106218758]
+custom_minimum_size = Vector2(400, 150)
+layout_mode = 1
+offset_left = 34.0
+offset_top = 41.0
+offset_right = 488.0
+offset_bottom = 191.0
+
+[node name="ExitButton" type="TextureButton" parent="TopBar" unique_id=812120422]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+texture_normal = ExtResource("7_2tp6q")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="KillCountLabel" type="Label" parent="TopBar" unique_id=801450109]
+custom_minimum_size = Vector2(250, 100)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("9_1yevk")
+theme_override_font_sizes/font_size = 65
+text = "Kills : 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RewardToast" type="PanelContainer" parent="." unique_id=195206487]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.69000006
+anchor_top = 0.637
+anchor_right = 0.69000006
+anchor_bottom = 0.637
+offset_left = -171.80005
+offset_top = -63.960022
+offset_right = 173.19995
+offset_bottom = 64.03998
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_lqcc4")
+
+[node name="RewardLabel" type="Label" parent="RewardToast" unique_id=1762055930]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0.79195106, 0.79195136, 1.1551381e-06, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("7_ixjr5")
+theme_override_font_sizes/font_size = 80
+text = "+1 Gold!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ToastTimer" type="Timer" parent="RewardToast" unique_id=533202171]
+one_shot = true
+
+[node name="BottomArea" type="Control" parent="." unique_id=839096774]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="CharacterDisplay" type="TextureRect" parent="BottomArea" unique_id=1281262767]
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = -491.0
+offset_right = 200.0
+offset_bottom = -91.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 8
+texture = ExtResource("2_b2eky")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AccessoryLayer" type="Control" parent="BottomArea/CharacterDisplay" unique_id=662367629]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("11_1yevk")
+metadata/_custom_type_script = "uid://dved8jjsnn672"
+
+[node name="XP_Row" type="HBoxContainer" parent="BottomArea" unique_id=197951424]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -315.0
+offset_top = -40.0
+offset_right = 165.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="XP_Icon" type="TextureRect" parent="BottomArea/XP_Row" unique_id=1898787595]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 2
+texture = SubResource("AtlasTexture_hb1yk")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="XP_Bar" type="ProgressBar" parent="BottomArea/XP_Row" unique_id=1291173190]
+custom_minimum_size = Vector2(600, 40)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/background = SubResource("StyleBoxFlat_u810s")
+theme_override_styles/fill = SubResource("StyleBoxFlat_8uoga")
+show_percentage = false
+
+[node name="XP_Value" type="Label" parent="BottomArea/XP_Row/XP_Bar" unique_id=859195950]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.5
+offset_top = -11.5
+offset_right = 21.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ixjr5")
+theme_override_font_sizes/font_size = 36
+text = "0/500"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LevelLabel" type="Label" parent="BottomArea/XP_Row" unique_id=1274844691]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_ixjr5")
+theme_override_font_sizes/font_size = 42
+text = "Lv. 1"
+
+[node name="TapHintLabel" type="Label" parent="." unique_id=408553574]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -51.5
+offset_top = -11.5
+offset_right = 51.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 70
+text = "Tap to Attack"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AfkTimer" type="Timer" parent="." unique_id=98749573]
+wait_time = 5.0
+one_shot = true

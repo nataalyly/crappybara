@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://cmyrrf32xaxid"]
+
+[ext_resource type="Script" uid="uid://htnqybpbmr7" path="res://Scripts/CharacterListScreen.gd" id="1_tv0jk"]
+[ext_resource type="Texture2D" uid="uid://byodm14d5ss2p" path="res://Assets/UI Panel/char_list.png" id="2_osdvc"]
+[ext_resource type="Texture2D" uid="uid://1n328hhttb2j" path="res://Assets/Buttons/close.png" id="2_ts7h1"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lqcc4"]
+texture = ExtResource("2_osdvc")
+
+[node name="CharacterListScreen" type="Control" unique_id=1287636184]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tv0jk")
+
+[node name="DimBackground" type="ColorRect" parent="." unique_id=1313132236]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.3137255)
+
+[node name="ListPanel" type="Panel" parent="." unique_id=39182602]
+custom_minimum_size = Vector2(800, 800)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_lqcc4")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="ListPanel" unique_id=1434413617]
+custom_minimum_size = Vector2(650, 650)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -313.0
+offset_top = -325.0
+offset_right = 337.0
+offset_bottom = 325.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CharacterGrid" type="GridContainer" parent="ListPanel/ScrollContainer" unique_id=262888326]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+columns = 3
+
+[node name="CloseButton" type="TextureButton" parent="ListPanel" unique_id=317993679]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 1
+offset_top = -8.0
+offset_right = 150.0
+offset_bottom = 142.0
+texture_normal = ExtResource("2_ts7h1")
+ignore_texture_size = true
+stretch_mode = 5

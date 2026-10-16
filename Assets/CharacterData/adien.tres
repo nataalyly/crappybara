@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://bvnljenpofjax"]
+
+[ext_resource type="Script" uid="uid://bu6gv51dr1yc6" path="res://Scripts/CharacterData.gd" id="1_hdyi8"]
+[ext_resource type="Texture2D" uid="uid://ba7l86usqjfwa" path="res://Assets/Character/Adien_chew1.png" id="1_s3qn6"]
+[ext_resource type="Texture2D" uid="uid://b8v56ej0u40l7" path="res://Assets/Character/Adien_chew2.png" id="2_y5se5"]
+[ext_resource type="Texture2D" uid="uid://1icfk6yqsf6f" path="res://Assets/Character/Adien_blink.png" id="3_g04ob"]
+[ext_resource type="Texture2D" uid="uid://8ebg608t6ksy" path="res://Assets/Character/Adien_normal.png" id="4_8bxss"]
+[ext_resource type="Texture2D" uid="uid://d3s4lj3oeowbe" path="res://Assets/Character/Adien_mouth.png" id="5_0flli"]
+
+[resource]
+script = ExtResource("1_hdyi8")
+character_name = "Adien"
+description = "Adien tidak pernah kalah debat, karena tidak pernah ada yang mengerti dia."
+rarity = "legendary"
+eyes_open_texture = ExtResource("4_8bxss")
+eyes_closed_texture = ExtResource("3_g04ob")
+mouth_open_texture = ExtResource("5_0flli")
+chew_texture_1 = ExtResource("1_s3qn6")
+chew_texture_2 = ExtResource("2_y5se5")
+metadata/_custom_type_script = "uid://bu6gv51dr1yc6"

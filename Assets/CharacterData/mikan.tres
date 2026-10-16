@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://7l6jcu5s0t4m"]
+
+[ext_resource type="Texture2D" uid="uid://cq41eo5bpjyq6" path="res://Assets/Character/Mikan_chew1.png" id="1_hg801"]
+[ext_resource type="Script" uid="uid://bu6gv51dr1yc6" path="res://Scripts/CharacterData.gd" id="1_jb3ax"]
+[ext_resource type="Texture2D" uid="uid://rj6eeo3flyhl" path="res://Assets/Character/Mikan_chew2.png" id="2_ajs8f"]
+[ext_resource type="Texture2D" uid="uid://ck65gwp6xcurl" path="res://Assets/Character/Mikan_blink.png" id="3_jnquq"]
+[ext_resource type="Texture2D" uid="uid://bxoeo66w0hsly" path="res://Assets/Character/Mikan_normal.png" id="4_d4d7u"]
+[ext_resource type="Texture2D" uid="uid://dhc4kqoml7iyk" path="res://Assets/Character/Mikan_mouth.png" id="5_cfb0a"]
+
+[resource]
+script = ExtResource("1_jb3ax")
+character_name = "Mikan"
+description = "Sopan, setia, dan selalu bawa cemilan."
+rarity = "common"
+eyes_open_texture = ExtResource("4_d4d7u")
+eyes_closed_texture = ExtResource("3_jnquq")
+mouth_open_texture = ExtResource("5_cfb0a")
+chew_texture_1 = ExtResource("1_hg801")
+chew_texture_2 = ExtResource("2_ajs8f")
+metadata/_custom_type_script = "uid://bu6gv51dr1yc6"

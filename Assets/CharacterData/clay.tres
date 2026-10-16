@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://bvcukn0ido08v"]
+
+[ext_resource type="Texture2D" uid="uid://ces3bxkpc4ppp" path="res://Assets/Character/capy_chew1.png" id="1_7x5ol"]
+[ext_resource type="Texture2D" uid="uid://bi8sbffoebhxg" path="res://Assets/Character/capy_chew2.png" id="2_afh5y"]
+[ext_resource type="Texture2D" uid="uid://b401sw1odmb7l" path="res://Assets/Character/capy_blink.png" id="3_cgpsa"]
+[ext_resource type="Texture2D" uid="uid://bv6q8qlp3p7ir" path="res://Assets/Character/capy_normal.png" id="4_lfoxr"]
+[ext_resource type="Texture2D" uid="uid://dkf7khfl3oole" path="res://Assets/Character/capy_mouth open.png" id="5_pduj8"]
+[ext_resource type="Script" uid="uid://bu6gv51dr1yc6" path="res://Scripts/CharacterData.gd" id="6_a31ki"]
+
+[resource]
+script = ExtResource("6_a31ki")
+character_name = "Clay"
+description = "Clay bisa tidur di mana saja, kapan saja, tanpa alasan jelas."
+rarity = "common"
+eyes_open_texture = ExtResource("4_lfoxr")
+eyes_closed_texture = ExtResource("3_cgpsa")
+mouth_open_texture = ExtResource("5_pduj8")
+chew_texture_1 = ExtResource("1_7x5ol")
+chew_texture_2 = ExtResource("2_afh5y")
+metadata/_custom_type_script = "uid://bu6gv51dr1yc6"

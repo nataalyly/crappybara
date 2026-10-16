@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://8yliq6gjsiss"]
+
+[ext_resource type="Script" uid="uid://bu6gv51dr1yc6" path="res://Scripts/CharacterData.gd" id="1_8g7bo"]
+[ext_resource type="Texture2D" uid="uid://dy87f86dnokq2" path="res://Assets/Character/Lhumud_chew1.png" id="1_a6ud5"]
+[ext_resource type="Texture2D" uid="uid://cyj7g1fmio30q" path="res://Assets/Character/Lhumud_chew2.png" id="2_pd0eg"]
+[ext_resource type="Texture2D" uid="uid://wqpev0njvkav" path="res://Assets/Character/Lhumud_blink.png" id="3_rpt2w"]
+[ext_resource type="Texture2D" uid="uid://dbe24dr6s7sy8" path="res://Assets/Character/Lhumud_normal.png" id="4_dyq53"]
+[ext_resource type="Texture2D" uid="uid://coxf85ts5r2vx" path="res://Assets/Character/Lhumud_mouth.png" id="5_kd4ed"]
+
+[resource]
+script = ExtResource("1_8g7bo")
+character_name = "Lhumud"
+description = "Tidak terlihat, tidak terdengar, tapi tahu-tahu nyolong wortelmu."
+rarity = "common"
+eyes_open_texture = ExtResource("4_dyq53")
+eyes_closed_texture = ExtResource("3_rpt2w")
+mouth_open_texture = ExtResource("5_kd4ed")
+chew_texture_1 = ExtResource("1_a6ud5")
+chew_texture_2 = ExtResource("2_pd0eg")
+metadata/_custom_type_script = "uid://bu6gv51dr1yc6"

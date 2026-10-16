@@ -1,0 +1,260 @@
+[gd_scene format=3 uid="uid://eiqr56w1g8fe"]
+
+[ext_resource type="Script" uid="uid://wlhuxilrgjsv" path="res://Scripts/GachaScene.gd" id="1_nbhy0"]
+[ext_resource type="Texture2D" uid="uid://1n328hhttb2j" path="res://Assets/Buttons/close.png" id="2_jl7ca"]
+[ext_resource type="Texture2D" uid="uid://dmb7mwwywndeo" path="res://Assets/gacha bg.png" id="2_pebgq"]
+[ext_resource type="Texture2D" uid="uid://qd68naq5q8o2" path="res://Assets/Buttons/1x pull.png" id="3_7fdk6"]
+[ext_resource type="Texture2D" uid="uid://dowbnsdbr6ydu" path="res://Assets/Buttons/10x pull.png" id="4_1sjly"]
+[ext_resource type="Texture2D" uid="uid://br104j77ypr76" path="res://Assets/glow effect.png" id="6_7fdk6"]
+[ext_resource type="FontFile" uid="uid://cwvaic8du4m71" path="res://Assets/Fonts/Game Bubble.ttf" id="6_ss6wj"]
+[ext_resource type="FontFile" uid="uid://ccvpusp74pttj" path="res://Assets/Fonts/Sunny Spells Basic.ttf" id="7_csf0e"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sle7y"]
+texture = ExtResource("2_pebgq")
+region_rect = Rect2(-397.8119, 304.48978, 2088.1992, 1272.844)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jl7ca"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t0suw"]
+content_margin_left = 5.0
+content_margin_top = 25.0
+content_margin_right = 5.0
+bg_color = Color(0.54459125, 0.9343836, 0.99999994, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 1)
+corner_detail = 10
+
+[node name="GachaScene" type="Control" unique_id=956289166]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nbhy0")
+
+[node name="DimBackground" type="ColorRect" parent="." unique_id=676882668]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.29411766)
+
+[node name="PullChoicePopup" type="Panel" parent="." unique_id=1217915979]
+custom_minimum_size = Vector2(800, 500)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -584.0
+offset_top = -365.0
+offset_right = 584.0
+offset_bottom = 365.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_sle7y")
+
+[node name="Pull1xButton" type="TextureButton" parent="PullChoicePopup" unique_id=379624246]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 0
+offset_left = 178.0
+offset_top = 317.0
+offset_right = 583.0
+offset_bottom = 669.0
+texture_normal = ExtResource("3_7fdk6")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Pull10xButton" type="TextureButton" parent="PullChoicePopup" unique_id=812396534]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 0
+offset_left = 576.0
+offset_top = 321.0
+offset_right = 1012.0
+offset_bottom = 663.0
+texture_normal = ExtResource("4_1sjly")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="CloseButton" type="TextureButton" parent="PullChoicePopup" unique_id=1402829295]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 0
+offset_right = 168.0
+offset_bottom = 168.0
+texture_normal = ExtResource("2_jl7ca")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="InsufficientGoldToast" type="PanelContainer" parent="PullChoicePopup" unique_id=166881073]
+visible = false
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_jl7ca")
+
+[node name="ToastLabel" type="Label" parent="PullChoicePopup/InsufficientGoldToast" unique_id=88654304]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 50
+text = "Gold tidak cukup!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResultLayer" type="Control" parent="." unique_id=458530576]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ResultCard" type="VBoxContainer" parent="ResultLayer" unique_id=713291562]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -438.5
+offset_right = 250.0
+offset_bottom = 438.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RarityLabel" type="Label" parent="ResultLayer/ResultCard" unique_id=1155652509]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0.5877506, 0.58775055, 0.5877505, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("6_ss6wj")
+theme_override_font_sizes/font_size = 70
+text = "Common"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PullStatusLabel" type="Label" parent="ResultLayer/ResultCard" unique_id=1668472502]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.8987799, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.6666667)
+theme_override_colors/font_outline_color = Color(0.62161005, 0.55621856, 3.85046e-07, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("7_csf0e")
+theme_override_font_sizes/font_size = 70
+text = "NEW CHARACTER!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PotraitWrapper" type="Control" parent="ResultLayer/ResultCard" unique_id=1308791295]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 2
+
+[node name="GlowEffect" type="TextureRect" parent="ResultLayer/ResultCard/PotraitWrapper" unique_id=1397964772]
+custom_minimum_size = Vector2(600, 600)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_7fdk6")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CharacterPotrait" type="TextureRect" parent="ResultLayer/ResultCard/PotraitWrapper" unique_id=1442105817]
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -250.0
+offset_right = 250.0
+offset_bottom = 258.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BonusList" type="VBoxContainer" parent="ResultLayer/ResultCard/PotraitWrapper" unique_id=1240244751]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="TicketBonusLabel" type="Label" parent="ResultLayer/ResultCard/PotraitWrapper/BonusList" unique_id=1228749772]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "BONUS +1 Ticket"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GoldBonusLabel" type="Label" parent="ResultLayer/ResultCard/PotraitWrapper/BonusList" unique_id=479538852]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "BONUS +2 Gold"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InfoBox" type="PanelContainer" parent="ResultLayer/ResultCard" unique_id=1361969577]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_t0suw")
+
+[node name="InfoBoxContent" type="VBoxContainer" parent="ResultLayer/ResultCard/InfoBox" unique_id=28662013]
+layout_mode = 2
+
+[node name="CharacterNameLabel" type="Label" parent="ResultLayer/ResultCard/InfoBox/InfoBoxContent" unique_id=541158844]
+layout_mode = 2
+theme_override_constants/outline_size = 18
+theme_override_fonts/font = ExtResource("6_ss6wj")
+theme_override_font_sizes/font_size = 65
+text = "CAPY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CharacterDescriptionLabel" type="Label" parent="ResultLayer/ResultCard/InfoBox/InfoBoxContent" unique_id=470536898]
+custom_minimum_size = Vector2(500, 150)
+layout_mode = 2
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("7_csf0e")
+theme_override_font_sizes/font_size = 48
+text = "Bahan seadanya, kepercayaan dirinya luar biasa."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="TapContinueLabel" type="Label" parent="ResultLayer/ResultCard" unique_id=900654264]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Tap on empty area to continue"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AccessoryData" format=3 uid="uid://bk17ylrd07ftp"]
+
+[ext_resource type="Texture2D" uid="uid://cjqkhu1jtu3h2" path="res://Assets/Accessory/merah.png" id="1_6b6qb"]
+[ext_resource type="Script" uid="uid://bkbjeyadvu0bq" path="res://Scripts/AccessoryData.gd" id="1_n4n8p"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6b6qb"]
+atlas = ExtResource("1_6b6qb")
+region = Rect2(0, 537.8554, 800, 262.1446)
+
+[resource]
+script = ExtResource("1_n4n8p")
+accessory_name = "RedClothes"
+slot = "Body"
+texture = ExtResource("1_6b6qb")
+icon = SubResource("AtlasTexture_6b6qb")
+metadata/_custom_type_script = "uid://bkbjeyadvu0bq"

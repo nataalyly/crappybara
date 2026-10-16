@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AccessoryData" format=3 uid="uid://wo1u4inmkmns"]
+
+[ext_resource type="Script" uid="uid://bkbjeyadvu0bq" path="res://Scripts/AccessoryData.gd" id="1_hj8kv"]
+[ext_resource type="Texture2D" uid="uid://cyiqdx1wkn55t" path="res://Assets/Accessory/ijo_tosca.png" id="1_j4y5v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j4y5v"]
+atlas = ExtResource("1_j4y5v")
+region = Rect2(0, 524.4907, 800, 275.50928)
+
+[resource]
+script = ExtResource("1_hj8kv")
+accessory_name = "Green Clothes"
+slot = "Body"
+texture = ExtResource("1_j4y5v")
+icon = SubResource("AtlasTexture_j4y5v")
+metadata/_custom_type_script = "uid://bkbjeyadvu0bq"

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://rm6qhokxv0ov"]
+
+[ext_resource type="Texture2D" uid="uid://6hlgx6qpqyaj" path="res://Assets/Character/sprinkle_chew1.png" id="1_3toca"]
+[ext_resource type="Texture2D" uid="uid://bn1lva236riv0" path="res://Assets/Character/sprinkle_chew2.png" id="2_6be2s"]
+[ext_resource type="Texture2D" uid="uid://b5m0ao0otvi5v" path="res://Assets/Character/sprinkle_blink.png" id="3_qjkyh"]
+[ext_resource type="Texture2D" uid="uid://b3ecsuwg4wrrl" path="res://Assets/Character/sprinkle_normal.png" id="4_tqocn"]
+[ext_resource type="Texture2D" uid="uid://du0rt378rfkp2" path="res://Assets/Character/sprinkle_mouth.png" id="5_53csm"]
+[ext_resource type="Script" uid="uid://bu6gv51dr1yc6" path="res://Scripts/CharacterData.gd" id="6_21jhg"]
+
+[resource]
+script = ExtResource("6_21jhg")
+character_name = "Sprinkle"
+description = "Turun dari surga karena promo makanan."
+rarity = "rare"
+eyes_open_texture = ExtResource("4_tqocn")
+eyes_closed_texture = ExtResource("3_qjkyh")
+mouth_open_texture = ExtResource("5_53csm")
+chew_texture_1 = ExtResource("1_3toca")
+chew_texture_2 = ExtResource("2_6be2s")
+metadata/_custom_type_script = "uid://bu6gv51dr1yc6"

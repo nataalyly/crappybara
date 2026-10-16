@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3 uid="uid://cgs03qvyyenib"]
+
+[ext_resource type="Texture2D" uid="uid://l81rjf3ti2ny" path="res://Assets/Character/grey_chew1.png" id="1_txc35"]
+[ext_resource type="Texture2D" uid="uid://bwkb64rwmbt5t" path="res://Assets/Character/grey_chew2.png" id="2_rc6i8"]
+[ext_resource type="Texture2D" uid="uid://c0ws1fv5da4kv" path="res://Assets/Character/grey_blink.png" id="3_h5vd6"]
+[ext_resource type="Texture2D" uid="uid://j6kdgiteaye" path="res://Assets/Character/grey_normal.png" id="4_wfc6v"]
+[ext_resource type="Texture2D" uid="uid://b3mj6pba7o787" path="res://Assets/Character/grey_mouth.png" id="5_xfilk"]
+[ext_resource type="Script" uid="uid://bu6gv51dr1yc6" path="res://Scripts/CharacterData.gd" id="6_0blgd"]
+
+[resource]
+script = ExtResource("6_0blgd")
+character_name = "Greg"
+description = "Bangun cuma untuk makan, lalu kembali menjalankan misi utama."
+rarity = "rare"
+eyes_open_texture = ExtResource("4_wfc6v")
+eyes_closed_texture = ExtResource("3_h5vd6")
+mouth_open_texture = ExtResource("5_xfilk")
+chew_texture_1 = ExtResource("1_txc35")
+chew_texture_2 = ExtResource("2_rc6i8")
+metadata/_custom_type_script = "uid://bu6gv51dr1yc6"

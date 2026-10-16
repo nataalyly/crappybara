@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AccessoryData" format=3 uid="uid://b81hfcw3p3bep"]
+
+[ext_resource type="Script" uid="uid://bkbjeyadvu0bq" path="res://Scripts/AccessoryData.gd" id="1_ulgjv"]
+[ext_resource type="Texture2D" uid="uid://8v30aki2axmr" path="res://Assets/Accessory/kuning.png" id="1_wfj4h"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wfj4h"]
+atlas = ExtResource("1_wfj4h")
+region = Rect2(0, 541.229, 800, 258.771)
+
+[resource]
+script = ExtResource("1_ulgjv")
+accessory_name = "YellowClothes"
+slot = "Body"
+texture = ExtResource("1_wfj4h")
+icon = SubResource("AtlasTexture_wfj4h")
+metadata/_custom_type_script = "uid://bkbjeyadvu0bq"
