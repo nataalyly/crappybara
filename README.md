@@ -22,4 +22,4 @@ Raise your capybara, collect rare skins through a gacha system, and send them in
 
 ## Getting Started
 
-🎮 Coming soon on [itch.io](https://itch.io)!
+🎮 [Play](https://nataalyly.itch.io/crappybara)!
